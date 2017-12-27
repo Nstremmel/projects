@@ -34,7 +34,9 @@ t.forward(20)
 t.right(120)
 t.end_fill()
 t.forward(100)
-
+t.penup()
+t.goto(-250,150)
+t.write("Like sand through an hourglass...So are the days of our lives.", font=20)
 
 t.ht()
 t.penup()

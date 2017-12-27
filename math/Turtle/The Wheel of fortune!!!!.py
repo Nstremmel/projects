@@ -12,6 +12,10 @@ third=t.clone()
 t.fd(100)
 fourth=t.clone()
 turtles=[first,second,third,fourth]
+
+
+
+
 for i in turtles:
 	i.shape("square")
 	i.shapesize(5,5,5)
@@ -21,6 +25,6 @@ while True:
 	third.color(colors[1])
 	fourth.color(colors[2])
 	colors[0],colors[1],colors[2],colors[3]=colors[3],colors[0],colors[1],colors[2]
-	sleep(1)
+	sleep(0.1)
 
 

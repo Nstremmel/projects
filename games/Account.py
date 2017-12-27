@@ -8,14 +8,14 @@ from random import randint
 
 
 
-
+path="C:\\Users\\nstremmel\\Git\\projects\\Documents\\account.txt"
 
 
 
 while (True):
 	os.system("color 0b")
 	counter3 = (1)
-	if ('yup') in open("C:\\Users\\Noah Stremmel\\Documents\\account.txt").read():
+	if ('yup') in open(path).read():
 	    account = ("yes");
 	else:
 		account = ("no");
@@ -45,7 +45,7 @@ while (True):
 				print ("")
 				password = input("What do you want your password to be? ")
 				print ("")
-				f = open("C:\\Users\\Noah Stremmel\\Documents\\account.txt", "w")
+				f = open(path, "w")
 				f.write("yup\n")
 				f.write(user + "\n")
 				f.write(password + "\n")
@@ -62,12 +62,12 @@ while (True):
 			askuser = input("Type in your username: ") + ("\n")
 			print ("")
 			askpassword = input("Type in your passsword: ") + ("\n")
-			bob = open("C:\\Users\\Noah Stremmel\\Documents\\account.txt", "r").readlines()[1]
+			bob = open(path, "r").readlines()[1]
 			if askuser == bob:
 				usercorrect = ("tr");
 			else:
 				usercorrect = ("false");
-			bill = open("C:\\Users\\Noah Stremmel\\Documents\\account.txt", "r").readlines()[2]
+			bill = open(path, "r").readlines()[2]
 			if askpassword == bill:
 				passcorrect = ("ue");
 			else:
@@ -399,7 +399,7 @@ while (True):
 							print ("")
 							info = input("Do you want to look at your stored information?...Type Yes or No. ").lower()
 							if info == ("yes"):
-								hasinfo = open("C:\\Users\\Noah Stremmel\\Documents\\account.txt", "r").read()
+								hasinfo = open(path, "r").read()
 								while (True):
 									if ("9876543425562346342323542435356732") in hasinfo:
 										print ("")
@@ -410,7 +410,7 @@ while (True):
 											line += (1)
 											if recover == (" "):
 												break;
-											recover = open("C:\\Users\\Noah Stremmel\\Documents\\account.txt", "r").readlines()[line]
+											recover = open(path, "r").readlines()[line]
 											print (recover)
 											sleep (.5)
 											continue;
@@ -421,7 +421,7 @@ while (True):
 												print ("")
 												sleep(.5)
 												information = input("Type in some information you want to store. ")
-												file1 = open("C:\\Users\\Noah Stremmel\\Documents\\account.txt", "a")
+												file1 = open(path, "a")
 												file1.write(information + "\n")
 												file1.write(" ")
 												file1.close()
@@ -451,7 +451,7 @@ while (True):
 											sleep(.1);
 										sleep(.5)
 										information = input("Type in some information you want to store. ")
-										file1 = open("C:\\Users\\Noah Stremmel\\Documents\\account.txt", "a")
+										file1 = open(path, "a")
 										if counter3 == (2):
 											file1.write("9876543425562346342323542435356732\n")
 											file1.write(" ");
@@ -466,7 +466,7 @@ while (True):
 									if addmore == ("yes"):
 										continue;
 									else:
-										file7 = open("C:\\Users\\Noah Stremmel\\Documents\\account.txt", "a")
+										file7 = open(path, "a")
 										file7.close()
 										break;
 										#end of information storage

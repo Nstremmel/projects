@@ -3,7 +3,6 @@ from time import sleep
 import random
 
 
-os.system("color 0b")
 twice = False
 letter = ("abcdefghijklmnopqrstuvwxyz")
 print ("Welcome to hangman!")
