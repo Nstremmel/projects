@@ -1,0 +1,90 @@
+html {
+	background-color: black;
+}
+#top {
+	color:white;
+	text-align:center;
+	font-family: fantasy;
+	font-size: 80px;
+	animation-duration:2s;
+	animation-name:first;
+	margin:100px 0px 0px;
+}
+#inside {
+	color:white;
+	margin:150px 0px 0px;
+	text-align:center;
+	font-family:fantasy;
+	animation-duration:2s;
+	animation-name:second;
+}
+@keyframes first {
+	from {
+    margin-left: 40%;
+    width: 300%; 
+  }
+
+  to {
+    text-align:center;
+    width: 100%;
+  }
+}
+#outside {
+	width:650px;
+	background-color:#FF8300;
+	border-radius: 25px;
+	height:80px;
+	margin:-200px 350px 0px;
+}
+#generate {
+	width:150px;
+	background-color:black;
+	border-radius: 10px;
+	height:70px;
+	margin:15px 245px 0px;
+	color:white;
+	text-align:center;
+	font-family:fantasy;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#generate:hover {
+	background-color:white;
+	color:black;
+}
+#Joel {
+	width:120px;
+	background-color:black;
+	border-radius: 10px;
+	height:70px;
+	margin:-70px 70px 0px;
+	color:white;
+	text-align:center;
+	font-family:fantasy;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Joel:hover {
+	background-color:white;
+	color:black;
+}
+#poems {
+	width:120px;
+	background-color:black;
+	border-radius: 10px;
+	height:70px;
+	margin:-70px 450px 0px;
+	color:white;
+	text-align:center;
+	font-family:fantasy;
+	vertical-align:middle;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#poems:hover {
+	background-color:white;
+	color:black;
+}

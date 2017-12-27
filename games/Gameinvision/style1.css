@@ -1,0 +1,57 @@
+html {
+	animation-name: first;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+@keyframes first {
+	from {background-color: red;}
+	to {background-color: blue;}
+}
+#top {
+	font-size:100px;
+	text-align:center;
+	animation-name: second,third;
+	animation-iteration-count: infinite,infinite;
+	animation-duration:1s,2s;
+	animation-direction:alternate,alternate;
+}
+@keyframes second {
+	from {font-size:20px;}
+	to {font-size:100px;}
+}
+@keyframes third {
+	from {color:blue;}
+	to {color:red;}
+}
+#pic1 {
+	margin:0px 200px 0px;
+	animation-name: fourth;
+	animation-iteration-count:infinite;
+	animation-duration:1s;
+	animation-direction:alternate;
+}
+#pic2 {
+	margin:-280px 900px -500px;
+	animation-name: fifth;
+	animation-iteration-count:infinite;
+	animation-duration:1s;
+	animation-direction:alternate;
+}
+@keyframes fourth {
+	from {width:200px;}
+	from {height:200px;}
+	to {width:300px;}
+	to {height:300px;}
+}
+@keyframes fifth {
+	from {width:200px;}
+	from {height:200px;}
+	to {width:300px;}
+	to {height:300px;}
+}
+
+
+
+
+
